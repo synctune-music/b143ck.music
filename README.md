@@ -53,6 +53,8 @@ The [Pages workflow](.github/workflows/static.yml) uploads `src/` directly, with
 
 To redeploy manually, select **Run workflow** on **main** in the workflow's Actions page. Deployments remain serialized without canceling an in-progress deployment.
 
+This site has no package manifest or dependency-update configuration. Keep Dependabot and CodeQL disabled in the repository's security settings.
+
 ## 🤝 Contributing
 
 Interested in contributing to this metal masterpiece? Check out the [CONTRIBUTING.md](CONTRIBUTING.md) file for guidelines.
