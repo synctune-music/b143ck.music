@@ -46,8 +46,10 @@ The website is built with:
 To view the website locally:
 
 1. Clone this repository
-2. Open the `src/index.html` file in your browser
+2. Run `node scripts/serve.js` (Node.js only, no dependencies) and open <http://127.0.0.1:8000/>. Pass a port as the first argument or set `PORT` to use another one.
 3. For full functionality (contact forms, booking), ensure you have internet connection
+
+Pages are linked with clean URLs without `.html` (for example `/calendar`, `/resources` and `/admin`), and the home page is `/`. GitHub Pages serves `calendar.html` at `/calendar`, and the old `.html` addresses still work. Opening `src/index.html` directly from disk will not follow these links, so use the preview server, which resolves URLs the same way Pages does. Keep new internal links extensionless, link to the home page as `./` (or `./#section`), and keep them relative. The preview server lives outside `src/` and is not published.
 
 ## Deployment
 
