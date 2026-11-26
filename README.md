@@ -2,6 +2,8 @@
 
 A personal website for metal vocalist and coach Matteo “Black” Bianchi. The editorial, high-contrast design puts one-on-one vocal coaching first while giving visitors a place to hear the work and get in touch.
 
+Live at [b143ck.synctune.it](https://b143ck.synctune.it). Brand assets (mark, favicon, avatar, colors and usage) live in the Synctune branding repository under `brands/b143ck-music/`.
+
 ## 🤘 The Concept
 
 This website serves as a hub for my metal vocalist persona, "Matteo 'Black' Bianchi", offering:
@@ -52,6 +54,8 @@ To view the website locally:
 The [Pages workflow](.github/workflows/static.yml) uploads `src/` directly, with no dependency installation or build step. It runs on `main` pushes that change `src/**` or `.github/workflows/static.yml`, skipping documentation-only changes outside the published site.
 
 To redeploy manually, select **Run workflow** on **main** in the workflow's Actions page. Deployments remain serialized without canceling an in-progress deployment.
+
+The custom domain `b143ck.synctune.it` is set in the repository's Pages settings, with a `CNAME` record to `synctune-music.github.io` in the `synctune.it` DNS zone. The old `synctune-music.github.io/b143ck.music/` address redirects there.
 
 This site has no package manifest or dependency-update configuration. Keep Dependabot and CodeQL disabled in the repository's security settings.
 
